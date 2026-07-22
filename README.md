@@ -15,7 +15,7 @@ entity destruction, evolution factor, and more. Once these are flowing into
 Home Assistant via the MQTT bridge, they can trigger any smart home automation
 you can imagine: flashing your house red when a player dies, announcing rocket
 launches over smart speakers, or plotting evolution factor on a dashboard. The
-synced lab is just the beginning.
+synced lab is just one possibility.
 
 <p align="center">
   <img src="https://makerworld.com/dimension/558821" alt="3D-printed Factorio Lab" width="400">
