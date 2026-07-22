@@ -9,7 +9,7 @@ colours of the science packs being consumed. When research completes, the lab
 flashes white five times. When research is cancelled, the light turns off.
 
 While this project focuses on the lab lighting, the underlying pipeline is
-extensible to far more. The Events Logger mod publishes a wide range of game
+extensible to other projects. The Events Logger mod publishes a wide range of game
 events — player joins and leaves, chat messages, deaths, rocket launches,
 entity destruction, evolution factor, and more. Once these are flowing into
 Home Assistant via the MQTT bridge, they can trigger any smart home automation
