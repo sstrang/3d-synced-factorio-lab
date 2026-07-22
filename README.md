@@ -8,6 +8,15 @@ When you start a research in-game, the lab's LEDs flicker and cycle through the
 colours of the science packs being consumed. When research completes, the lab
 flashes white five times. When research is cancelled, the light turns off.
 
+While this project focuses on the lab lighting, the underlying pipeline is
+extensible to far more. The Events Logger mod publishes a wide range of game
+events — player joins and leaves, chat messages, deaths, rocket launches,
+entity destruction, evolution factor, and more. Once these are flowing into
+Home Assistant via the MQTT bridge, they can trigger any smart home automation
+you can imagine: flashing your house red when a player dies, announcing rocket
+launches over smart speakers, or plotting evolution factor on a dashboard. The
+synced lab is just the beginning.
+
 <p align="center">
   <img src="https://makerworld.com/dimension/558821" alt="3D-printed Factorio Lab" width="400">
 </p>
