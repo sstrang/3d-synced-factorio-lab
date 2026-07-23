@@ -106,7 +106,7 @@ light:
 | Event | Behaviour |
 |---|---|
 | `research-started` | Cycles the LED through the colours of each science pack being consumed, using WLED's **Candle Multi** effect at speed 150 / intensity 255, swapping colours at a random interval between 0.5–2.0 seconds |
-| `research-finished` | Blinks **solid white** five times (300ms on / 300ms off) |
+| `research-finished` | Blinks **solid white** |
 | `research-cancelled` | Light **off** |
 
 The automation uses queued mode with `wait_for_trigger` so that completion
