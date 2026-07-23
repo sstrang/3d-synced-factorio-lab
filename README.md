@@ -6,7 +6,8 @@ mod's effect on real LED hardware.
 
 When you start a research in-game, the lab's LEDs flicker and cycle through the
 colours of the science packs being consumed. When research completes, the lab
-flashes white five times. When research is cancelled, the light turns off.
+flashes white once when research completes. When research is cancelled, the
+light turns off.
 
 While this project focuses on the lab lighting, the underlying pipeline is
 extensible to other projects. The Events Logger mod publishes a wide range of game
@@ -105,8 +106,8 @@ light:
 
 | Event | Behaviour |
 |---|---|
-| `research-started` | Cycles the LED through the colours of each science pack being consumed, using WLED's **Candle Multi** effect at speed 150 / intensity 255, swapping colours at a random interval between 0.5–2.0 seconds |
-| `research-finished` | Blinks **solid white** |
+| `research-started` | Cycles the LED through the exact RGB colours of each science pack being consumed (sourced from the [Disco Science](https://github.com/danielbrauer/DiscoScience) mod source code), using WLED's **Candle Multi** effect at speed 150 / intensity 255, swapping colours every 1 second |
+| `research-finished` | Flashes **solid white** once (300ms on / 300ms off) using the **Smooth** effect |
 | `research-cancelled` | Light **off** |
 
 The automation uses queued mode with `wait_for_trigger` so that completion
@@ -158,7 +159,9 @@ and the next starts almost instantly.
   [royvandongen](https://github.com/royvandongen/Factorio-Event-Logger-Mod).
 - [WLED](https://kno.wled.ge/) by Aircoookie.
 - The [Disco Science](https://mods.factorio.com/mod/DiscoScience) mod by
-  _aidan_364 inspired this project's lighting behaviour.
+  [Daniel Brauer](https://github.com/danielbrauer) inspired this project's
+  lighting behaviour, and the exact science pack RGB colour values are sourced
+  from its code.
 
 ## License
 
