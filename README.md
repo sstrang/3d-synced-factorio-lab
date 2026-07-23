@@ -17,9 +17,9 @@ you can imagine: flashing your house red when a player dies, announcing rocket
 launches over smart speakers, or plotting evolution factor on a dashboard. The
 synced lab is just one possibility.
 
-<p align="center">
-  <img src="https://makerworld.com/dimension/558821" alt="3D-printed Factorio Lab" width="400">
-</p>
+## Demo Video (click image for YouTube link)
+
+[![3D Synced Factorio Lab Demo](https://img.youtube.com/vi/dr5V2G0T_bw/hqdefault.jpg)](https://www.youtube.com/watch?v=dr5V2G0T_bw)
 
 ## How It Works
 
