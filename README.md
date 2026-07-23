@@ -6,8 +6,7 @@ mod's effect on real LED hardware.
 
 When you start a research in-game, the lab's LEDs flicker and cycle through the
 colours of the science packs being consumed. When research completes, the lab
-flashes white once when research completes. When research is cancelled, the
-light turns off.
+flashes white once. When research is cancelled, the light turns off.
 
 While this project focuses on the lab lighting, the underlying pipeline is
 extensible to other projects. The Events Logger mod publishes a wide range of game
